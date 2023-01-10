@@ -1,0 +1,6 @@
+<h1>Into Handlebars</h1>
+<p>Olá <b>{{users.name}} {{users.surname}}</b> seja bem vindo!</p>
+
+{{#if auth}}
+    <p>Ola {{users.name}} {{users.surname}} você esta autenticado <a href="/dashboard">clique aqui</a> para ir para o dashboard.</p>
+{{/if}}

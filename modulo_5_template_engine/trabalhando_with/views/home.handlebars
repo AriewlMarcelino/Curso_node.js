@@ -1,0 +1,15 @@
+<h1>Into Handlebars</h1>
+<p>Olá <b>{{users.name}} {{users.surname}}</b> seja bem vindo!</p>
+
+
+{{!-- Estrura de else/if --}}
+{{#if approved}}
+    <p>Parabéns seu cadastro foi realizado com o sucesso!</p>
+{{else}}
+    <p>O seu cadastro ncessita de validação do sistema para poder seguir...</p>
+{{/if}}
+
+{{!-- estrutura if --}}
+{{#if auth}}
+    <p>Ola {{users.name}} {{users.surname}} você esta autenticado <a href="/dashboard">clique aqui</a> para ir para o dashboard.</p>
+{{/if}}
